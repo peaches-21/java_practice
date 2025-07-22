@@ -1,6 +1,11 @@
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
+
+    //Object : Any entity that has state and behavior is known as an object
+    // Class : Collection of objects is called class. It is a logical entity.
+    // A class can also be defined as a blueprint from which you can create an individual object. Class doesn't consume any space.
+
         VariableDemo v = new VariableDemo();
         v.test();
         ConstructorDemo c = new ConstructorDemo();
