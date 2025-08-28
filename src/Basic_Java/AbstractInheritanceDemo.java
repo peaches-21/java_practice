@@ -4,3 +4,8 @@ abstract class AbstractInheritanceDemo extends AbstractDemo{
     }
     abstract void show();
 }
+/*
+ Output :
+ Abstract method in AbstractInheritanceDemo
+ Show Method AbstractDemo
+ */

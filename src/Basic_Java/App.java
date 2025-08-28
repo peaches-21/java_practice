@@ -1,10 +1,14 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
 
-    //Object : Any entity that has state and behavior is known as an object
-    // Class : Collection of objects is called class. It is a logical entity.
-    // A class can also be defined as a blueprint from which you can create an individual object. Class doesn't consume any space.
+        /* Access modifier
+        public : The code is accessible for all classes	
+        private	: The code is only accessible within the declared class	
+        default	: The code is only accessible in the same package. 
+                  This is used when you don't specify a modifier. 	
+        protected : The code is accessible in the same package and subclasses.
+         */
+        System.out.println("Hello, World!");
 
         VariableDemo v = new VariableDemo();
         v.test();
@@ -15,8 +19,8 @@ public class App {
         System.out.println(s.a);
         s.display();
         
-        ThisDemo t = new ThisDemo();
-        t.display();
+        // ThisDemo t = new ThisDemo();
+        // t.display();
 
         //Single Inheritance
         ChildClassDemo cc = new ChildClassDemo();
