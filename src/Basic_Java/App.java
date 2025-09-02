@@ -8,6 +8,7 @@ public class App {
                   This is used when you don't specify a modifier. 	
         protected : The code is accessible in the same package and subclasses.
          */
+        //non-access modifiers are final, static, and abstract
         System.out.println("Hello, World!");
 
         VariableDemo v = new VariableDemo();

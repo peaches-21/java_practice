@@ -91,3 +91,24 @@ The java instanceof operator is used to test whether the object is an instance o
 The instanceof in java is also known as type comparison operator because it compares the instance with type. It returns either true or false. If we apply the instanceof operator with any variable that has null value, it returns false.
 
 java package : is a group of similar types of classes, interfaces and sub-packages. Package in java can be categorized in two form, built-in package and user-defined package. There are many built-in packages such as java, lang, awt, javax, swing, net, io, util, sql etc. Here, we will have the detailed learning of creating and using user-defined packages.
+
+     Data Structure	Stores	Keeps Order?	    Allows Duplicates?	    Best For
+     ArrayList	            Ordered elements	Yes	                    Yes	Accessing elements by index
+     HashSet	            Unique elements	No	No	                    Avoiding duplicates, fast checks
+     HashMap	            Key-value pairs	No	Yes (keys are unique)	Fast lookup by key
+
+     Interface	Common Classes	                    Description
+     List	    ArrayList, LinkedList	            Ordered collection that allows duplicates
+     Set	    HashSet, TreeSet, LinkedHashSet	    Collection of unique elements
+     Map	    HashMap, TreeMap, LinkedHashMap	    Stores key-value pairs with unique keys
+
+     Interface	Class	        Description
+     List	    ArrayList	    Resizable array that maintains order and allows duplicates
+                LinkedList	    List with fast insert and remove operations
+     Set	    HashSet	        Unordered collection of unique elements
+                TreeSet	        Sorted set of unique elements (natural order)
+                LinkedHashSet	Maintains the order in which elements were inserted
+     Map	    HashMap	        Stores key/value pairs with no specific order
+                TreeMap	        Sorted map based on the natural order of keys
+                LinkedHashMap	Maintains the order in which keys were inserted
+    
