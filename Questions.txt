@@ -1,0 +1,209 @@
+✅ Q1. Tell me about yourself and your professional journey
+"Good afternoon. I’m Priyanka Shewale, a QA Automation Engineer with 8 years of experience in E-Commerce, Insurance, ATM systems, and Navigation platforms. I specialize in building scalable automation frameworks, API/UI testing, and integrating automation into CI/CD pipelines. My expertise includes Selenium, Cucumber, SpecFlow, Postman, Appium, and programming in Java, C#, and Python.
+In my recent roles, I led QA initiatives that improved test coverage by 15%, reduced regression cycle time by 40%, and optimized CI/CD pipelines, cutting release time by 20%. I enjoy combining technical expertise with team leadership to drive quality at scale, and I’m excited to bring these skills into a role where QA directly contributes to business success."
+
+✅ Q2. How do you ensure quality in a fast-paced Agile environment?
+"I ensure quality by embedding testing early in the sprint with in-sprint automation, API validations, and strong collaboration with developers. I maintain reusable automation suites in CI/CD, which provide daily feedback on build health. I prioritize critical business workflows and ensure test data is always ready. This way, testing doesn’t block development and we deliver high-quality features at speed."
+
+✅ Q3. How do you handle defect leakage into production?
+"I take ownership of defect leakage by driving root cause analysis with the team. We identify whether it’s due to test gaps, unclear requirements, or environment issues. Based on findings, I strengthen regression suites, improve automation, and adjust processes. I also promote 'shift-left testing'—catching issues earlier with unit, API, and integration checks—so leaks reduce significantly over time."
+
+✅ Q4. How do you prioritize test cases when time is limited?
+"I apply risk-based testing. Critical business workflows, customer-facing features, and areas with recent changes come first. Smoke and sanity tests validate core stability, while less critical cases are scheduled later. This ensures that, even under pressure, business-critical functionality is never compromised."
+
+✅ Q5. How do you handle conflicts between QA and Development teams?
+"I resolve conflicts with facts and transparency. If there’s disagreement on a defect, I present clear evidence—logs, screenshots, or API traces—while listening to the developer’s perspective. I remind the team that our common goal is product stability. By focusing on business impact instead of personal opinions, we reach constructive solutions."
+
+✅ Q6. What is your experience with CI/CD and automation strategy?
+"I integrated automation into GitLab CI/CD pipelines, enabling daily smoke and regression runs across environments. I built reusable suites triggered after every build, reducing manual regression by 30%. My strategy is layered: start with API automation for speed, extend to UI for critical paths, and make results visible through dashboards. This approach ensures faster feedback loops and high release confidence."
+
+✅ Q7. How do you mentor or guide junior testers?
+"I mentor through pairing, code reviews, and knowledge-sharing sessions. I encourage juniors to use design patterns like POM and help them understand defect root causes instead of just logging bugs. I also involve them in framework enhancements so they gain ownership and confidence. This strengthens both their skills and the overall QA team."
+
+✅ Q8. What motivates you in your role as a QA professional?
+"I’m motivated by ensuring products are reliable and add real value to end users. What drives me is knowing my work reduces business risk—whether by preventing outages, increasing release confidence, or automating repetitive tasks to free teams for innovation. Making testing smarter and more efficient motivates me daily."
+
+✅ Q9. How do you align QA goals with business objectives?
+"I connect testing to business value. For example, automating high-traffic e-commerce flows reduced customer-impacting issues. In insurance, automating state-specific regression ensured compliance and reduced manual errors. By aligning QA to outcomes like reduced risk, customer satisfaction, and faster time-to-market, I ensure testing supports business goals."
+
+✅ Q10. Where do you see yourself in the next 3–5 years?
+"In 3–5 years, I see myself in a senior QA leadership role, defining test strategy across teams while staying hands-on with automation. I want to leverage AI/ML in testing to make it smarter and more predictive, mentor the next generation of testers, and ensure QA continues to deliver measurable business impact."
+
+Q. What is your greatest achievement?
+"At LexisNexis Risk Solutions, I automated regression testing for a Windows-based insurance product that was 100% manual before. I built an SSH + SFTP based automation system to run tests across multiple VMs and integrated Beyond Compare CLI for automated report generation. This reduced manual testing time by 80% and increased coverage. The approach was later adopted across teams and earned me recognition as an Automation Champion."
+
+Q. Why do you want to join Morningstar?
+"I admire Morningstar’s reputation as a leader in financial data and research. This role excites me because it combines two things I value most: technical leadership in QA automation and exposure to capital markets. I see this as a chance to contribute my expertise while learning more about financial products. I also value Morningstar’s global culture and structured processes, which align with how I work best."
+
+Q. Why should we hire you?
+"Because I bring a blend of technical depth and leadership. I’ve delivered measurable impact—15% higher coverage, 40% faster regression cycles, 20% faster releases—while mentoring juniors and aligning QA with business priorities. My experience with automation, CI/CD, and Agile delivery matches your needs, and I’m confident I can ensure high-quality delivery and continuous improvement for Morningstar."
+
+Automation Frameworks & Tools
+Q1. Can you walk me through an automation framework you designed? Why did you choose that approach?
+“In one project, I designed a hybrid BDD framework using Selenium + Cucumber (Java). I combined:
+Page Object Model for reusable UI actions
+Gherkin features for business readability
+REST-assured for API validations
+Extent Reports for reporting
+GitLab CI/CD for execution
+I chose this because business analysts could review scenarios in plain English, while automation was robust for regression. This reduced manual testing effort by 30% and increased release confidence.”
+
+Q2. How do you ensure your framework is scalable and maintainable?
+“I follow design principles like:
+Clear separation of concerns (tests, page objects, utils)
+Reusable libraries for waits, logging, and data handling
+Externalized test data in JSON/Excel/DB
+CI/CD integration with environment parameters
+Code reviews and modularization
+This ensures adding new tests requires minimal changes and onboarding new team members is easy.”
+
+Q3. What is the difference between Page Object Model (POM) and Page Factory? When would you use each?
+POM: Manual definition of locators, explicit initialization. More flexible for dynamic elements.
+Page Factory: Uses @FindBy annotations, initializes elements at runtime with initElements. Less boilerplate, but can fail with dynamic locators.
+“I use POM for complex/dynamic pages, Page Factory for static UI with many elements.”
+
+Q4. How do you handle dynamic elements in Selenium?
+Use relative XPath with contains(), starts-with(), or parent-child relations
+Apply explicit waits (WebDriverWait)
+If IDs change, use CSS attributes like data-test-id
+In some cases, request developers to add automation-friendly locators
+
+Q5. How do you implement reusable test data management in your automation framework?
+“I externalize data in JSON/Excel/DB. A DataProvider (TestNG) or Scenario Outline (Cucumber) feeds tests. For sensitive data, I use masked config files. For insurance projects, I parameterized state-based rules to drive variations automatically.”
+
+Q6. Have you worked with parallel execution? How did you configure it?
+“Yes, I used:
+TestNG with parallel=tests for UI
+SpecFlow with NUnit.Parallelizable in C#
+GitLab runners for distributing jobs
+This cut regression time from 5 hours to under 2 hours.”
+
+Q7. Advantages of BDD frameworks vs keyword-driven frameworks
+BDD (Cucumber/SpecFlow): Improves collaboration, readable scenarios, stakeholder-friendly.
+Keyword-driven: Reusable keywords, better for non-technical testers.
+“I prefer BDD when business wants visibility; keyword-driven when focus is rapid automation by testers.”
+
+Q8. How do you decide what to automate and what not to automate?
+“I automate repetitive, stable, business-critical flows with high ROI. I avoid rarely used, unstable, or one-time test cases. For example, I automated login, payment, and API flows, but exploratory UI checks were kept manual.”
+
+Q9. How do you implement OOP concepts in automation?
+Encapsulation: Page Objects hide element locators, exposing methods like login().
+Inheritance: Base Test class with setup/teardown inherited by all tests.
+Polymorphism: Overloaded wait methods; overridden setup in child classes.
+
+Q10. Method overloading vs overriding in automation?
+Overloading: clickElement(WebElement e) vs clickElement(By locator).
+Overriding: BaseTest setup() overridden in MobileTest for Appium.
+
+Q11. How do you handle exceptions in automation? Example of custom exception?
+“I use try-catch with logging. For retries, I use RetryAnalyzer in TestNG. I created a custom exception ElementNotVisibleException to throw meaningful errors when locators fail, improving debugging.”
+
+Q12. HashMap vs HashSet vs List?
+List: Ordered, allows duplicates → Store usernames for login.
+HashSet: Unique values → Validate dropdown uniqueness.
+HashMap: Key-value pairs → Map test case ID → Expected result.
+
+Q13. In C#, how would you use LINQ for test data validation?
+“I used LINQ queries to filter and validate test data, e.g., var result = users.Where(u => u.Age > 18).ToList();. Helpful for filtering API responses or Excel test data quickly.”
+
+Q14. Python’s strengths for test automation vs Java/C#?
+“Python is concise, easier to write, and integrates well with AI/ML testing. Libraries like PyTest, Requests, and Behave are lightweight. Java/C# are better for enterprise scale, strongly typed frameworks.”
+
+🔹 API Testing
+Q15. How do you validate REST APIs?
+Validate status codes, headers, schema, response body.
+In REST-assured: given().when().get().then().statusCode(200).body("id", equalTo(1));.
+In Postman: write assertions in JS.
+
+Q16. Difference between PUT, PATCH, POST?
+POST: Create new record
+PUT: Replace full record
+PATCH: Update partial fields
+
+Q17. How do you handle authentication in API testing?
+Pass OAuth tokens in headers (Authorization: Bearer)
+Refresh tokens programmatically
+Use environment variables in Postman/GitLab for security
+
+Q18. How do you automate end-to-end API regression?
+“I group APIs into collections by module (auth, payment, profile). Then chain requests with dynamic variables. In GitLab, I run Postman via Newman nightly. In REST-assured, I write regression suites with data-driven inputs.”
+
+Q19. How do you validate API performance?
+Use response.time() in Postman/REST-assured.
+Add SLAs (e.g., < 500ms).
+For load, use JMeter/Gatling.
+
+🔹 CI/CD & DevOps
+Q20. How have you integrated tests into pipelines?
+“I integrated smoke + regression into GitLab CI/CD. Jobs triggered on merge request. Reports were pushed to GitLab artifacts + Slack. This enabled continuous feedback.”
+
+Q21. How do you manage execution across environments?
+“Parameterized environments using config files/variables (--env=QA). Pipelines triggered per environment. Test data separated to avoid clashes.”
+
+Q22. What if tests fail intermittently in CI/CD?
+“I isolate root cause: environment instability, data, or flaky locators. I add retries with exponential backoff and improve test waits. I also work with DevOps to stabilize infra.”
+
+Q23. How do you report results to stakeholders?
+“Extent Reports, Allure, and GitLab HTML reports. For leadership, I summarize pass/fail trends in Jira dashboards.”
+
+Q24. Challenges in CI/CD integration?
+Test data sync → solved by creating seed data APIs.
+Environment instability → added health checks.
+Long execution time → added parallel runners.
+
+🔹 Database & Validation
+Q25. Have you written SQL queries to validate data? Example?
+“Yes. Example:
+SELECT premium_amount FROM policies WHERE policy_id=123;
+Validated DB value against API/UI. Ensured correctness in insurance premium flows.”
+
+Q26. How do you ensure data consistency across layers?
+“I validate same transaction through UI, API, and DB. E.g., user submits claim → API response validated → DB record cross-checked → UI displays correct amount.”
+
+Q27. How do you handle test data setup and cleanup?
+“I use pre-configured SQL scripts or API calls to create test data before execution. Post-tests, cleanup ensures DB is reset. In GitLab, I automated pre/post hooks.”
+
+🔹 Test Strategy & Leadership
+Q28. How do you decide automation strategy for new project?
+“Assess app type, tech stack, release frequency. Start with API automation for speed, add UI for key journeys, integrate CI/CD, set metrics like execution time < 1 hr, coverage > 70%.”
+
+Q29. How do you measure automation ROI?
+“Time saved vs manual effort, defect leakage reduction, faster releases. Example: regression went from 2 days manual → 4 hrs automated = 75% savings.”
+
+Q30. How do you prevent automation from slowing delivery?
+“Focus on smoke/in-sprint automation first, keep regression as nightly jobs. Ensure framework is lightweight and parallelizable.”
+
+Q31. How do you deal with flaky tests?
+“Classify root cause → fix locators, add waits, stabilize data. Track flaky test rate < 5%. Remove unstable tests from release pipeline until fixed.”
+
+Q32. How do you align QA with business priorities?
+“Risk-based testing. Automate high-revenue and compliance features first. In insurance, I prioritized premium calculations and compliance checks since they directly impacted customers and regulators.”
+
+🔹 Domain & Business Knowledge
+Q33. How does QA add value in regulated industries?
+“QA ensures compliance, traceability, and audit readiness. Automated reports, version-controlled test evidence, and role-based testing reduce regulatory risks.”
+
+Q34. Risks of defect leakage in financial products?
+“Financial loss, compliance penalties, brand damage. I mitigate via automation in CI/CD, early validations, and strong regression.”
+
+Q35. Role-based access/compliance testing?
+“Yes, tested RBAC in banking → customer vs admin roles. Validated GDPR ‘Right to be Forgotten’ workflows.”
+
+Q36. Insurance domain: how did you handle state-specific variations?
+“I built data-driven tests with state as parameter. Each run validated premiums and rules per state. Reduced manual validation time by 80%.”
+
+🔹 Scenario-Based
+Q37. Automation suite fails with 50% false positives before release. What do you do?
+“Stop release → analyze → categorize failures (infra, data, script). Fix top issues, rerun smoke to validate stability. Communicate risks clearly.”
+
+Q38. Developers deliver code late in sprint. How do you handle testing?
+“I push for in-sprint automation of earlier stories, parallelize testing with dev. For late code, I prioritize smoke + critical flows to ensure coverage before release.”
+
+Q39. Business asks for hotfix release. How do you adjust testing?
+“Run risk-based smoke tests + impacted modules only. Defer full regression post-release. Communicate risks transparently.”
+
+Q40. Intermittent bug hard to reproduce. How do you handle it?
+“Add extra logs, screenshots, and network traces. Run test in stress/parallel mode. If reproducible only in production, add monitoring hooks. Document and escalate with clear evidence.”
+
+Q41. New API with zero documentation: how to test?
+“I explore via Swagger or Postman by inspecting responses. Collaborate with dev for expected behavior. Reverse-engineer from DB schema. Write exploratory tests, then formalize regression suite once docs mature.”
